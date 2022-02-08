@@ -34,5 +34,12 @@ public class LinkedListController {
 		
 		System.out.println();
 	}
+	
+	public static void addNodeAtFront(Node newNode) {
+		 Node temp = LinkedList.head;
+		LinkedList.head = newNode;
+		LinkedList.head.next = temp;	
+	}
+	
 
 }
