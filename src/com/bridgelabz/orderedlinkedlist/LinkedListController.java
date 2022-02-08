@@ -41,5 +41,19 @@ public class LinkedListController {
 		LinkedList.head.next = temp;	
 	}
 	
-
+	public static void addNodeAtEnd(Node newNode) {
+		if(LinkedList.head == null) {
+			LinkedList.head = newNode; 
+			LinkedList.head.next = null;
+			LinkedList.tail = newNode;
+		}
+		
+		else {
+			Node temp = LinkedList.tail;
+			temp.next = newNode;
+			LinkedList.tail = newNode;
+			LinkedList.tail.next = null;	
+		}	
+	}
+	
 }
