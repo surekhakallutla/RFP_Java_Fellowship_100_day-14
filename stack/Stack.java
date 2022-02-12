@@ -13,6 +13,5 @@ public class Stack {
 	public String toString() {
 		return "Stack [data=" + data + ", top=" + top + ", stackArray=" + Arrays.toString(stackArray) + ", size=" + size
 				+ "]";
-	}
-			
+	}			
 }
