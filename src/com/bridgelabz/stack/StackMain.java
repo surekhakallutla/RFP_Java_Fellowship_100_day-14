@@ -3,7 +3,6 @@ package com.bridgelabz.stack;
 import java.util.Scanner;
 
 public class StackMain {
-	
 	static {
 		System.out.println("Welcome to Stack Program");
 	}
@@ -18,10 +17,10 @@ public class StackMain {
 		switch(choice) {
 		case 1:
 			
-			for(int i = 0 ; i < stack.size; i++) {
+			for(int i = 0 ; i < stackOpe.size(); i++) {
 				System.out.println("Enter value to push");
-				stack.data = scn.nextInt();
-				stackOpe.push(stack.data);
+				int data = scn.nextInt();
+				stackOpe.push(data);
 			}
 			
 			System.out.println("Elements are Added to Stack");
@@ -48,5 +47,6 @@ public class StackMain {
 		}
 	
 	}
+
 
 }
